@@ -1,0 +1,51 @@
+/* line 1, /Users/ErikYoung/Desktop/rails_september/calum/app/assets/stylesheets/static_pages.scss */
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+/* line 7, /Users/ErikYoung/Desktop/rails_september/calum/app/assets/stylesheets/static_pages.scss */
+h2 {
+  text-align: center;
+}
+
+/* line 11, /Users/ErikYoung/Desktop/rails_september/calum/app/assets/stylesheets/static_pages.scss */
+body {
+  background: #cab298;
+}
+
+/* line 15, /Users/ErikYoung/Desktop/rails_september/calum/app/assets/stylesheets/static_pages.scss */
+h1,
+h2,
+h3 {
+  font-family: Futura, Helvetica, Arial, sans-serif;
+  color: white;
+  margin: 0px;
+  padding: 5px;
+}
+
+/* line 24, /Users/ErikYoung/Desktop/rails_september/calum/app/assets/stylesheets/static_pages.scss */
+p {
+  font-family: Georgia, Times, Times New Roman, serif;
+}
+
+/* line 28, /Users/ErikYoung/Desktop/rails_september/calum/app/assets/stylesheets/static_pages.scss */
+footer {
+  padding-top: 60px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
