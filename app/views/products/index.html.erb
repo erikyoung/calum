@@ -6,7 +6,6 @@
   <thead>
     <tr>
       <th>Name</th>
-      <th>String</th>
       <th>Description</th>
       <th>Image url</th>
       <th colspan="3"></th>
@@ -17,7 +16,6 @@
     <% @products.each do |product| %>
       <tr>
         <td><%= product.name %></td>
-        <td><%= product.string %></td>
         <td><%= product.description %></td>
         <td><%= product.image_url %></td>
         <td><%= link_to 'Show', product %></td>
