@@ -1,0 +1,2 @@
+class Free < ApplicationRecord
+end

@@ -1,0 +1,42 @@
+<%= form_for(free) do |f| %>
+  <% if free.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(free.errors.count, "error") %> prohibited this free from being saved:</h2>
+
+      <ul>
+      <% free.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :speaking %>
+    <%= f.text_field :speaking %>
+  </div>
+
+  <div class="field">
+    <%= f.label :lesson %>
+    <%= f.text_field :lesson %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+  </div>
+
+  <div class="field">
+    <%= f.label :image_url %>
+    <%= f.text_field :image_url %>
+  </div>
+
+  <div class="field">
+    <%= f.label :string %>
+    <%= f.text_field :string %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
