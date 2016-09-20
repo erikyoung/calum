@@ -17,44 +17,34 @@
          <%= image_tag("The_Complete_Guide_to_IELTS_Success.jpg", class: "img-responsive") %>" 
           <p><br><a class="btn btn-default" href="products/8" role="button">Equip Yourself With the Latest Exam Materials &raquo;</a></p>
       </div>
+
+      <div class="col-md-4">
+         <%= image_tag("Cambridge_Vocab.jpg", class: "img-responsive") %>" 
+          <p><br><a class="btn btn-default" href="products/8" role="button">Master the Lanaguage Examiners Look For &raquo;</a></p>
+      </div>
       
-
-        <div class="damn-form">
-          <form>
-            <div class="form-group">
-              <label for="name">*Your Name</label>
-              <input type="text" class="form-control" id="name" required="required" title="(*)Name"placeholder="Enter Name">
-            </div>
-
-            <div class="form-group">
-              <label for="email">*Your Email</label>
-              <input type="email" class="form-control" id="email" required="required" title="(*)Email" placeholder="Enter Email">
-              <label for="paragraph">Your Message</label>
-              <textarea placeholder="Enter Message" style="resize:none" required='required' class="form-control" class="message-box" id="paragraph" cols="40" rows="5"></textarea>
-              <br>
-              <button type="submit" class="btn btn-success contact-submit" id="button">Submit</button>
-              </div><!--end Damn-form-->
-
-            </div>
-          </form>
-        </div><!--end grid div-->
-      </div><!--end row div-->
-    </div><!--end contactinfo div-->
-  </div><!--end contact form div-->   
-</div><!--end container div--> 
-
-
 
   <tbody>
     <% @products.each do |product| %>
       <tr>
-        <td><%= product.name %></td>
+        <tr :class => "IELTS Prep">
+        <h2 :class => "Cambridge IELTS Preparation"><%= product.name %></h2>
         <td><%= product.description %></td>
         <td><%= product.image_url %></td>
         <td><%= link_to 'Show', product %></td>
         <td><%= link_to 'Edit', edit_product_path(product) %></td>
         <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      </tr>     
+
+<%= link_to 'New Product', new_product_path %>
+
+<tr :class => "Cambridge Vocab">
+        <h2 :class => "Cambridge IELTS Vocab"><%= product.name %></h2>
+        <td><%= product.description %></td>
+        <td><%= product.image_url %></td>
+        <td><%= link_to 'Show', product %></td>
+        <td><%= link_to 'Edit', edit_product_path(product) %></td>
+        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
     <% end %>
   </tbody>
 </table>
@@ -62,5 +52,4 @@
 <br>
 
 <%= link_to 'New Product', new_product_path %>
-
 
