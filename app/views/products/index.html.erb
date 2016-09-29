@@ -15,11 +15,15 @@
 
       <div class="col-md-4">
          <%= image_tag("The_Complete_Guide_to_IELTS_Success.jpg", class: "img-responsive") %>" 
+         <h1>Complete Guide to IELTS</h1>
+         <strong>$ 42</strong>
           <p><br><a class="btn btn-default" href="products/8" role="button">Equip Yourself With the Latest Exam Materials &raquo;</a></p>
       </div>
 
       <div class="col-md-4">
          <%= image_tag("Cambridge_Vocab.jpg", class: "img-responsive") %>" 
+         <h1>Cambridge IELTS Vocab</h1>
+        <strong>$ 44</strong>
           <p><br><a class="btn btn-default" href="products/8" role="button">Master the Lanaguage Examiners Look For &raquo;</a></p>
       </div>
       
@@ -70,6 +74,7 @@
         <td><%= product.description %></td>
         <td><%= product.image_url %></td>
         <td><%= product.colour %></td>
+        <td>£<%= product.price %></td>
         <td><%= link_to 'Show', product %></td>
         <td><%= link_to 'Edit', edit_product_path(product) %></td>
         <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -78,22 +83,7 @@
   </tbody>
 </table>
 
-<div class="container">
-  <div class="row">
-    <div class="col-sm-2 col-md-4">
-      <h1>Complete Guide to IELTS</h1>
-      <p>Comprehensive Study Guide</p>
-      <strong>$ 42</strong>
-    </div><!-- /col -->
-    <div class="col-sm-2 col-md-4">
-      <h1>Cambridge IELTS Vocab</h1>
-      <p>Target the Vocab on the Exam</p>
-      <strong>$ 44</strong>
-  </div>
-</div>
 
-
-     
 
 <%= link_to 'New Product', new_product_path %>
 
