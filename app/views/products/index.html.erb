@@ -11,85 +11,21 @@
       <h3>Start Your Journey</h3>
     </div><!--end header div-->
 
-
-
+<%= link_to 'New Product', new_product_path %>
+    <% @products.each do |product| %> 
       <div class="col-md-4">
-         <%= image_tag("The_Complete_Guide_to_IELTS_Success.jpg", class: "img-responsive") %>" 
-         <h1>Complete Guide to IELTS</h1>
-         <strong>$ 42</strong>
-          <p><br><a class="btn btn-default" href="products/8" role="button">Equip Yourself With the Latest Exam Materials &raquo;</a></p>
+         <%= image_tag(product.image_url, class: "img-responsive") if product.image_url %>
+         <%= product.name %>
+         <%= product.price %>
+         <%= product.description %>
+         <%= link_to product.name, product_path(product), :class => "btn-default" %>
+         <%= link_to 'Edit', edit_product_path(product),:class => "btn btn-default" %>
+         <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-default" %>
+          
       </div>
-
-      <div class="col-md-4">
-         <%= image_tag("Cambridge_Vocab.jpg", class: "img-responsive") %>" 
-         <h1>Cambridge IELTS Vocab</h1>
-        <strong>$ 44</strong>
-          <p><br><a class="btn btn-default" href="products/8" role="button">Master the Lanaguage Examiners Look For &raquo;</a></p>
-      </div>
+    <% end %>
       
-  <h1>Listing products</h1>
+  
 
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Image url</th>
-      <th>Colour</th>
-      <th>Price</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>    
-
-  <tbody>
-    <% @products.each do |product| %>
-      <tr>
-        <tr :class => "IELTS Prep">
-        <h2 :class => "Cambridge IELTS Preparation"><%= product.name %></h2>
-        <td><%= product.description %></td>
-        <td><%= product.image_url %></td>
-        <td><%= product.colour %></td>
-        <td><%= product.price %></td>
-        <td><%= link_to 'Show', product %></td>
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>     
-
-<%= link_to 'New Product', new_product_path %>
-
-<tr :class => "Cambridge Vocab">
-        <h2 :class => "Cambridge IELTS Vocab"><%= product.name %></h2>
-        <td><%= product.description %></td>
-        <td><%= product.image_url %></td>
-        <td><%= product.colour %></td>
-        <td><%= product.price %></td>
-        <td><%= link_to 'Show', product %></td>
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<tbody>
-    <% @products.each do |product| %>
-      <tr>
-        <td><%= product.name %></td>
-        <td><%= product.description %></td>
-        <td><%= product.image_url %></td>
-        <td><%= product.colour %></td>
-        <td><%= product.price %></td>
-        <td><%= link_to 'Show', product %></td>
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-
-
-<%= link_to 'New Product', new_product_path %>
 
