@@ -1,15 +1,22 @@
 <p id="notice"><%= notice %></p>
 
 <h2>Our Exclusive Guide to IELTS Success</h2>
-
-<div id="container">
-  <!-- Contact -->
-  <div data-stellar-background-ratio=".5"></div>
-  <div class="container anchor" id="info">
-    <div class="header-contact">
-      <h3>Start Your Journey</h3>
+      
     </div><!--end header div-->
   </div>
+
+  <div class="container">
+  <div class="row">
+    <div class="col-sm-2 col-md-4">
+      <h3>Cambridge IELTS Prep</h3>
+    </div><!-- /col -->
+    <div class="col-sm-2 col-md-4">
+      <h3>IELTS Vocabulary Prep</h3>
+    </div><!-- /col -->
+    <div class="col-sm-2 col-md-4">
+      <h3>IELTS Reading Prep</h3>
+    </div><!-- /col -->
+
 
 <%= link_to 'New Product', new_product_path %>
 <div class="container-fluid">
@@ -22,12 +29,13 @@
          <%= product.description %>
          <%= link_to product.name, product_path(product), :class => "btn-default" %>
          <%= link_to 'Edit', edit_product_path(product),:class => "btn btn-default" %>
-         <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-default" %>
-          
+         <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-default" %>
+          <br />
+          <br />
+          <br />
       </div>
     <% end %>
   </div> <!--Container -->
-
 
 
       
