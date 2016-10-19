@@ -1,24 +1,30 @@
 <p id="notice"><%= notice %></p>
 
+
+<h2>The Complete Guide to IELTS Success</h2>
 <p>
   <strong>Name:</strong>
   <%= @product.name %>
 </p>
 
+<h3>Everything You Need to Know About IELTS</h3>
 <p>
   <strong>Description:</strong>
   <%= @product.description %>
 </p>
 
+<div class="booyah-box-show col-xs-10 col-xs-offset-1">
 <p>
   <strong>Image url:</strong>
   <%= image_tag(@product.image_url, class: "img-responsive")%>
 </p>
+</div>
 
 
 <p>
   <strong>Price:</strong>
   <%= @product.price %>
+  
 </p>
 
 
