@@ -24,17 +24,30 @@
 }
 
 
-h2 {
-  margin-top: 0;
-  text-shadow: 0px 1px 2px #2a2a2a;
-  }
-
-
   .btn btn-default {
   margin-bottom: 0;
   box-shadow: 1px 1px 2px 0 #d0d0d0;
 
   }
+
+h2  {
+  text-align: center;
+  margin-top: 0;
+  text-shadow: 0px 1px 2px #2a2a2a;
+  }
+
+
+h3 {
+  text-align: center;
+}
+
+
+.booyah-box-show col-xs-10 col-xs-offset-1  {
+  diplay: inline-block;
+  float: left;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  margin-bottom: 20px;
+}
 
 
 
