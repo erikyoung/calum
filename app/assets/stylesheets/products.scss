@@ -1,15 +1,5 @@
 
-.container-sweet {
-  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
-  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
-  box-shadow: 1px 1px 2px 0 #d0d0d0;
-  background: #fff;
-  border: 1px solid #ccc;
-  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
-  margin-top: 10px;
-  margin-bottom: 15px;
-  padding: 20px;
-}
+
 
 .container h3 {
 	text-align: center;
@@ -24,7 +14,7 @@
 }
 
 
-  .btn btn-default {
+.btn btn-default {
   margin-bottom: 0;
   box-shadow: 1px 1px 2px 0 #d0d0d0;
 
@@ -41,8 +31,7 @@ h3 {
   text-align: center;
 }
 
-
-.booyah-box-show col-xs-10 col-xs-offset-1 .carousel-inner  {
+.booyah-box-show col-xs-12 col-xs-offset-1 .carousel-inner  {
   diplay: inline-block;
   float: left;
   box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -50,19 +39,12 @@ h3 {
   max-width: 100%;
   line-height: 1;
   margin-left: 50px;
-
+  width: 300px;
   
 }
 
 
-.carousel-caption {
-    font-family: 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight:50;
-    text-shadow: rgba(0,0,0,0.50) 1px 1px;
-    background-color: rgba(0,0,0,0.25);
-    margin-bottom: 20px;
-}
+
 
 
 

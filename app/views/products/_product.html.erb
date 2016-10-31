@@ -1,6 +1,6 @@
 
 <% @products.each do |product| %>
-      <div class="col-sm-2 col-md-4">
+      <div class="booyah-box-show col-xs-10 col-xs-offset-1">
          <%= image_tag(product.image_url, class: "img-responsive")  %>
          <%= product.name %>
          <%= product.price %>
@@ -13,4 +13,5 @@
           <br />
           <br />
       </div>
+
     <% end %>
